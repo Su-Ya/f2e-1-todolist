@@ -9,4 +9,4 @@
 -- API
 
 ## Schedule
-- 20180604: Base UI done! (no animation or programming)
+- 20180604: Base UI done! (no animation, no RWD, no programming)
