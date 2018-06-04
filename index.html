@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang=zh-TW>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To DO List</title>
+    <link rel="stylesheet" href="stylesheets/screen.css">
+
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <header>
+        <main class="main-width">
+            <span class="tab tab-title tab-title-active">My Tasks</span>
+            <span class="tab tab-title">In Progress</span>
+            <span class="tab tab-title">Completed</span>
+        </main>
+    </header>
+    <section class="main-width focus-style">
+        <form>
+            <div>
+                <div class="add">
+                    <div class="task">
+                        <div class="inline-block grid-xs">
+                            <input type="checkbox">
+                        </div>
+                        <div class="inline-block grid-large">
+                            <h2>Type Something here...</h2>
+                        </div>
+                        <div class="inline-block grid-sm">
+                            <i class="far fa-star"></i>
+                            <i class="fas fa-pencil-alt"></i>
+                        </div>
+                        <div class="input" style="display:none;">
+                            <span class="add-sign">
+                                <span></span>
+                                <span></span>
+                            </span> Add Task
+                        </div>
+                    </div>
+                    <div class="add-detail">
+                        <label for="deadline-date" class="subtitle">
+                            <i class="far fa-calendar-alt"></i> Deadline
+                        </label>
+                        <div class="form-spacing">
+                            <input type="text" placeholder="yy/mm/dd" id="deadline-date">
+                            <input type="text" placeholder="hh:mm" id="deadline-time">
+                        </div>
+
+                        <label for="upload-real" class="subtitle">
+                            <i class="far fa-file"></i> File
+                        </label>
+                        <div class="form-spacing">
+                            <input type="file" id="upload__real">
+                            <div class="btn--upload__fake">+</div>
+                        </div>
+
+                        <label for="comments" class="subtitle">
+                            <i class="far fa-comment-dots"></i> Comment
+                        </label>
+                        <div class="form-spacing">
+                            <textarea id="comments" placeholder="Type your memo here..." rows="5"></textarea>
+                        </div>
+                    </div>
+                    <div class="btn-area">
+                        <button type="reset" class="btn btn--reset">
+                            <span class="btn-spacing">
+                                <span class="cancel-sign">
+                                    <span></span>
+                                    <span></span>
+                                </span>
+                                Cancel
+                            </span>
+                        </button>
+                        <button type="submit" class="btn btn--submit">
+                            <span class="btn-spacing">
+                                <span class="add-sign">
+                                    <span></span>
+                                    <span></span>
+                                </span>
+                                Add Task
+                            </span>
+                        </button>
+                    </div>
+                </div>
+        </form>
+    </section>
+    <section class="main-width task-container">
+        <div class="task task--bookmark">
+            <div class="inline-block grid-xs">
+                <input type="checkbox">
+            </div>
+            <div class="inline-block grid-large">
+                <h2>Type Something here...</h2>
+            </div>
+            <div class="inline-block grid-sm">
+                <i class="far fa-star"></i>
+                <i class="fas fa-pencil-alt"></i>
+            </div>
+            <div class="status-bar">
+                <i class="far fa-calendar-alt">05/25</i>
+                <i class="far fa-file"></i>
+                <i class="far fa-comment-dots"></i>
+            </div>
+        </div>
+        <div class="task">
+            <div class="inline-block grid-xs">
+                <input type="checkbox">
+            </div>
+            <div class="inline-block grid-large">
+                <h2>Type Something here...</h2>
+            </div>
+            <div class="inline-block grid-sm">
+                <i class="far fa-star"></i>
+                <i class="fas fa-pencil-alt"></i>
+            </div>
+            <div class="status-bar">
+                <i class="far fa-file"></i>
+                <i class="far fa-comment-dots"></i>
+            </div>
+        </div>
+    </section>
+    <footer class="main-width">Askie Lin &copy; 2018</footer>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+</body>
+
+</html>
