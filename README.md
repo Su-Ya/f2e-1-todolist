@@ -10,3 +10,4 @@
 
 ## Schedule
 - 20180604: Base UI done! (no animation, no RWD, no programming)
+- 20180609: Adding some visual design and get data (no sort)

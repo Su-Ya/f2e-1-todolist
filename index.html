@@ -13,8 +13,6 @@
     <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
-    <script src="script.js"></script>
-
 </head>
 
 <body>
@@ -25,7 +23,7 @@
             <span class="tab tab-title">Completed</span>
         </main>
     </header>
-    <section class="main-width focus-style">
+    <section class="main-width form-style">
         <form>
             <div class="add" id="input-container">
                 <div class="input" id="fake-input">
@@ -35,15 +33,8 @@
                     </span> Add Task
                 </div>
                 <div class="task" id="add-task">
-                    <div class="inline-block grid-xs">
-                        <input type="checkbox">
-                    </div>
-                    <div class="inline-block grid-large">
-                        <h2>Type Something here...</h2>
-                    </div>
-                    <div class="inline-block grid-sm">
-                        <i class="far fa-star"></i>
-                        <i class="fas fa-pencil-alt"></i>
+                    <div class="inline-block grid-xlarge">
+                        <input type="text" placeholder="Type Something here..." class="task-imput" id="add-input">
                     </div>
                 </div>
             </div>
@@ -53,8 +44,8 @@
                         <i class="far fa-calendar-alt"></i> Deadline
                     </label>
                     <div class="form-spacing">
-                        <input type="text" placeholder="yy/mm/dd" id="deadline-date">
-                        <input type="text" placeholder="hh:mm" id="deadline-time">
+                        <input type="date" placeholder="yy/mm/dd" id="deadline-date">
+                        <input type="text" placeholder="hh:mm" id="deadline-time" style="display: none;">
                     </div>
 
                     <label for="upload-real" class="subtitle">
@@ -73,7 +64,7 @@
                     </div>
                 </div>
                 <div class="btn-area">
-                    <button type="reset" class="btn btn--reset">
+                    <button type="reset" class="btn btn--reset" id="add-reset">
                         <span class="btn-spacing">
                             <span class="cancel-sign">
                                 <span></span>
@@ -97,9 +88,11 @@
     </section>
     <section class="main-width task-container">
         <div class="task task--bookmark">
-            <div class="inline-block grid-xs">
+            <i class="fas fa-ellipsis-v task-sort"></i>
+            <label class="task-checkbox inline-block grid-xs">
                 <input type="checkbox">
-            </div>
+                <span class="checkmark"></span>
+            </label>
             <div class="inline-block grid-large">
                 <h2>Type Something here...</h2>
             </div>
@@ -114,9 +107,11 @@
             </div>
         </div>
         <div class="task">
-            <div class="inline-block grid-xs">
+            <i class="fas fa-ellipsis-v task-sort"></i>
+            <label class="task-checkbox inline-block grid-xs">
                 <input type="checkbox">
-            </div>
+                <span class="checkmark"></span>
+            </label>
             <div class="inline-block grid-large">
                 <h2>Type Something here...</h2>
             </div>
@@ -130,8 +125,11 @@
             </div>
         </div>
     </section>
-    <footer class="main-width">Askie Lin &copy; 2018</footer>
-
+    <footer class="main-width">
+        <div id="total"></div>
+        Askie Lin &copy; 2018</footer>
+    <script src="https://momentjs.com/downloads/moment-with-locales.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
